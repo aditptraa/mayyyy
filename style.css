@@ -1,0 +1,76 @@
+/* Reset margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Video sebagai latar belakang */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: rgba(255, 192, 203, 0.9); /* pink semi-transparan */
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero-section p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Pusatkan konten */
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Foto profil bulat */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ikon Instagram */
+.social-icon a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+.social-icon a img:hover {
+  transform: scale(1.2);
+}
